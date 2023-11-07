@@ -5,14 +5,20 @@
     --colorBrandDark: #465929;
 }
 body{
+    font-size: 18px;
     color: var(--primaryColorDark);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
 }
+/* head */
 .button1 {
     background-color: var(--colorBrand);
     color: var(--primaryColorLite);
     border: 2px solid var(--colorBrand);
     border-radius: 8px;
     cursor: pointer;
+    font-weight: 600;
 }
 .button1:hover{
     background-color: transparent;
@@ -21,23 +27,91 @@ body{
 }
 .headLink{
     color: var(--primaryColorLite);
+    text-decoration: none;
 }
 .headLink:hover{
     color: var(--colorBrandDark);
+    font-weight: 600;
 }
 ul{
     list-style: none;
 }
+/* title */
 .heroTitle{
     color: var(--primaryColorLite);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
 }
 .heroTitle .accent {
     color: var(--colorBrand);
 }
+/* переваги */
 .adventeges {
     background-color: var(--colorBrand);
     color: var(--primaryColorLite);
 }
+.adventeges li{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/* format  */
+.sectionTitle { 
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+    text-decoration: none;
+}
+.shop1 span {
+    color: var(--colorBrand);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.shop2 span{
+    color: var(--colorBrand);
+    font-weight: 600;
+}
+
+/* повара */
 .sectionTitle span {
     color: var(--colorBrandDark);
+}
+.name {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* формати */
+.formTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+.textFormat p {
+    font-size: 14px;
+    font-weight: 300;
+}
+.sectionTitle ul {
+    text-decoration: none;
+}
+
+
+/* footer */
+.addressLink {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.addressLink a {
+    color: var(--primaryColorLite);
+}
+.linkAdress { 
+    font-size: 16px;
+    font-weight: 300;
+}
+.property {
+    font-size: 18px;
+    font-weight: 400;
 }

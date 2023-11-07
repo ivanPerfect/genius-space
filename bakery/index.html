@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -31,11 +37,11 @@
         </ul>
 
         <h2 class="sectionTitle">Новий формат традицій</h2>
-        <p>
+        <p class="shop1">
           <span>Shop bakery</span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
         </p>
-        <p>
+        <p class="shop2">
           Ми працюємо як найвідоміші мережі —
           <span>5 хвилин і замовлення готове</span>.А ще у наших пекарень
           стильний дизайн та висока якість обслуговування!
@@ -45,12 +51,11 @@
 
       <section id="cookers">
         <h1 class="sectionTitle">Наші найкращі <span> шеф -кухарі</span></h1>
-
         <ul>
           <li>
             <article>
               <img src="./img/natya.jpg" alt="Nastya" />
-              <h3>Настя</h3>
+              <h3 class="name">Настя</h3>
               <p>Привіт, я Настя!</p>
               <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
               <p>Я випічу для вас найсмачніщі вироби!</p>
@@ -59,7 +64,7 @@
           <li>
             <article>
               <img src="./img/vlad.jpg" alt="vlad" />
-              <h3>Влад</h3>
+              <h3 class="name">Влад</h3>
               <p>Привіт, я Влад!</p>
               <p>
                 Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов,
@@ -73,31 +78,63 @@
 
       <section id="formats">
         <h2 class="sectionTitle">Формати</h2>
-        <li>
-          <article>
-            <h3>Walrus</h3>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Horseshoe</h3>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Handlebar</h3>
-          </article>
-        </li>
+        <ul>
+          <li>
+            <article>
+              <h3 class="formTitle">Walrus</h3>
+              <div class="textFormat">
+                <p>Площа: до 120 м2</p>
+                <p>Меню: розширене меню</p>
+                <p>
+                  Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                  офіціанти-різнороби
+                </p>
+                <p>Посадкові місця: є</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3 class="formTitle">Horseshoe</h3>
+              <div class="textFormat">
+                <p>Площа: до 25 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3 class="formTitle">Handlebar</h3>
+              <div class="textFormat">
+                <p>Площа: до 15 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
 
-      <section >
+      <section>
         <h2 class="sectionTitle">Приєднуйся до мережі пекарень</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699360306712!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699360306712!5m2!1suk!2sua"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer id="contacts">
       <nav>
-        <a href=""><img src="./img/logo.svg" alt="logo"></a>
+        <a href=""><img src="./img/logo.svg" alt="logo" /></a>
         <ul>
           <li><a class="headLink" href="#tradition">Наші традиції</a></li>
           <li><a class="headLink" href="#cookers">Шеф-кухарі</a></li>
@@ -105,7 +142,7 @@
           <li><a class="headLink" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
-      <address>
+      <address class="addressLink">
         <ul>
           <li><a href="+380960000007">+ 38 (096) 000 00 07</a></li>
           <li>
@@ -119,8 +156,8 @@
           <li><a href=""></a> face</li>
           <li><a href=""></a> inst</li>
         </ul>
-        <a href="" target="_blank">Політика конфіденційності</a>
-        <p>© 2022 Дані захищені</p>
+        <a href="" target="_blank" class="linkAdress">Політика конфіденційності</a>
+        <p class="property">© 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
