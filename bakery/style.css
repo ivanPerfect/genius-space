@@ -1,0 +1,43 @@
+:root {
+    --colorBrand: #819B57;
+    --primaryColorLite: #faf4ea;
+    --primaryColorDark: #31261A;
+    --colorBrandDark: #465929;
+}
+body{
+    color: var(--primaryColorDark);
+}
+.button1 {
+    background-color: var(--colorBrand);
+    color: var(--primaryColorLite);
+    border: 2px solid var(--colorBrand);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button1:hover{
+    background-color: transparent;
+    color: var(--colorBrand);
+    cursor: pointer;
+}
+.headLink{
+    color: var(--primaryColorLite);
+}
+.headLink:hover{
+    color: var(--colorBrandDark);
+}
+ul{
+    list-style: none;
+}
+.heroTitle{
+    color: var(--primaryColorLite);
+}
+.heroTitle .accent {
+    color: var(--colorBrand);
+}
+.adventeges {
+    background-color: var(--colorBrand);
+    color: var(--primaryColorLite);
+}
+.sectionTitle span {
+    color: var(--colorBrandDark);
+}
