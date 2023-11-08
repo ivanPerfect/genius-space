@@ -15,19 +15,21 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href=""><img src="./img/logo.svg" alt="logo" /></a>
-          <ul>
-            <li><a class="headLink" href="#tradition">Наші традиції</a></li>
-            <li><a class="headLink" href="#cookers">Шеф-кухарі</a></li>
-            <li><a class="headLink" href="#formats">Формати</a></li>
-            <li><a class="headLink" href="#contacts">Контакти</a></li>
-          </ul>
-        </nav>
-        <button type="button" class="button1">Замовити дзвінок</button>
+        <div class="headConteiner">
+          <nav class="headerNav">
+            <a href=""><img src="./img/logo.svg" alt="logo" /></a>
+            <ul class="headerUl">
+              <li><a class="headLink" href="#tradition">Наші традиції</a></li>
+              <li><a class="headLink" href="#cookers">Шеф-кухарі</a></li>
+              <li><a class="headLink" href="#formats">Формати</a></li>
+              <li><a class="headLink" href="#contacts">Контакти</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="button1">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
-    
+
     <main>
       <section class="heroSection">
         <div class="container">
@@ -35,7 +37,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section adventege">
         <div class="container">
           <h2 class="hidden">Наші переваги</h2>
           <ul class="adventeges">
@@ -48,17 +50,22 @@
 
       <section class="tradition section" id="tradition">
         <div class="container">
-          <h2 class="sectionTitle traditionTilte">Новий формат традицій</h2>
-          <p class="shop1">
-            <span>Shop bakery</span> — це пекарня, яка взяла все найкраще, і
-            зберегла смак традиційної випічки та натуральність інгредієнтів.
-          </p>
-          <p class="shop2">
-            Ми працюємо як найвідоміші мережі —
-            <span>5 хвилин і замовлення готове</span>.А ще у наших пекарень
-            стильний дизайн та висока якість обслуговування!
-          </p>
-          <img src="./img/image1.jpg" alt="image" />
+          <div class="traditionContainer">
+            <div class="traditionContent">
+              <h2 class="sectionTitle traditionTilte">Новий формат традицій</h2>
+              <p class="shop1">
+                <span>Shop bakery</span> — це пекарня, яка взяла все найкраще, і
+                зберегла смак традиційної випічки та натуральність інгредієнтів.
+              </p>
+              <p class="shop2">
+                Ми працюємо як найвідоміші мережі — <br />
+                <span>5 хвилин і замовлення готове</span>. <br />А ще у наших
+                пекарень стильний дизайн <br />
+                та висока якість обслуговування!
+              </p>
+            </div>
+            <img src="./img/image1.jpg" alt="image" />
+          </div>
         </div>
       </section>
 
@@ -96,9 +103,9 @@
       <section class="section" id="formats">
         <div class="container">
           <h2 class="sectionTitle formatsTilte">Формати</h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="formatList">
+            <li class="formatLi">
+              <article class="formatCard">
                 <h3 class="formTitle">Walrus</h3>
                 <div class="textFormat">
                   <p>Площа: до 120 м2</p>
@@ -111,8 +118,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formatLi">
+              <article class="formatCard">
                 <h3 class="formTitle">Horseshoe</h3>
                 <div class="textFormat">
                   <p>Площа: до 25 м2</p>
@@ -122,8 +129,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formatLi">
+              <article class="formatCard">
                 <h3 class="formTitle">Handlebar</h3>
                 <div class="textFormat">
                   <p>Площа: до 15 м2</p>
