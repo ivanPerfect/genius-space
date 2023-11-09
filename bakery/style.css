@@ -3,6 +3,8 @@
   --primaryColorLite: #faf4ea;
   --primaryColorDark: #31261a;
   --colorBrandDark: #465929;
+  --colorChefTilte: #CFCFBC;
+  --colorBorder:#A18268;
 }
 body {
   font-size: 18px;
@@ -24,18 +26,18 @@ p {
   margin-top: 0;
 }
 .container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1288px;
-    padding: 0 24px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1288px;
+  padding: 0 24px;
 }
 /* head */
-.headConteiner{
+.headConteiner {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.headerNav{
+.headerNav {
   gap: 40px;
   flex-grow: 1;
   display: flex;
@@ -74,8 +76,15 @@ ul {
   list-style: none;
 }
 /* title */
+main {
+  background-color: var(--primaryColorLite) ;
+}
 .heroSection {
   padding: 272px 0px;
+  background-image: url("./img/bgcHead.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 .heroTitle {
   color: var(--primaryColorLite);
@@ -124,7 +133,7 @@ ul {
 .traditionTilte {
   margin-bottom: 42px;
 }
-.traditionContent{
+.traditionContent {
   max-width: 710px;
 }
 .tradition {
@@ -137,18 +146,29 @@ ul {
   line-height: 1.3;
   text-decoration: none;
 }
-.formatCard{
+
+.sectionTitle.center {
+ text-align: center;
+}
+.formatCard {
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
   border: 1px solid black;
   border-radius: 10px;
+  height: 444px;
 }
-.formatList{
+.formatList {
   gap: 20px;
   padding: 24px;
   display: flex;
   flex-wrap: wrap;
 }
-.formatLi{
-  flex-basis: calc((100% - 40px)/ 3);
+.formatLi {
+  flex-basis: calc((100% - 40px) / 3);
 }
 .shop1 span {
   color: var(--colorBrand);
@@ -162,7 +182,20 @@ ul {
 
 /* повара */
 .cookersTilte {
-  margin-bottom: 80px;
+  width: 532px;
+  margin: 0 auto 80px;
+}
+.cookersTilte::before {
+  content: ' ';
+  display: block;
+  width: 352px;
+  border: 2px solid var(--colorChefTilte);
+}
+.cookersTilte::after {
+  content: ' ';
+  display: block;
+  width: 352px;
+  border: 2px solid var(--colorChefTilte);
 }
 .sectionTitle span {
   color: var(--colorBrandDark);
@@ -172,14 +205,18 @@ ul {
   font-weight: 600;
   margin-bottom: 16px;
 }
+.cookerImg {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--primaryColorLite), -16px 16px 0 1px var(--colorBorder);
+}
 
 /* формати */
 .formTitle {
   font-size: 24px;
   font-weight: 600;
 }
-.formatsTilte{
-    margin-bottom: 80px;
+.formatsTilte {
+  margin-bottom: 80px;
 }
 .textFormat p {
   font-size: 14px;
@@ -189,10 +226,18 @@ ul {
   text-decoration: none;
 }
 /* kontaktu  */
-.contactsSection{
-    margin-bottom: 16px;
+.contactsSection {
+  margin-bottom: 16px;
 }
 /* footer */
+
+footer {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #31261a;
+  background-image: url("./img/footer.jpg");
+}
 .addressLink {
   font-style: normal;
   font-size: 16px;
