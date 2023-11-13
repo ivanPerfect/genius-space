@@ -18,6 +18,7 @@ body {
 *::after,
 *::before {
   box-sizing: border-box;
+  overflow-x: none;
 }
 h1,
 h2,
@@ -37,6 +38,12 @@ a {
   display: inline-block;
 }
 /* head */
+header {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  width: 100%;
+}
 .headConteiner {
   display: flex;
   align-items: center;
@@ -71,6 +78,7 @@ a {
 .headLink {
   color: var(--primaryColorLite);
   text-decoration: none;
+  transition: color 0.3s;
 }
 .headLink:hover {
   color: var(--colorBrandDark);
@@ -86,7 +94,13 @@ main {
 }
 .heroSection {
   padding: 272px 0px;
-  background-image: url("./img/bgcHead.jpg");
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url("./img/bgcHead.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -165,6 +179,10 @@ main {
   border: 1px solid black;
   border-radius: 10px;
   height: 444px;
+  transition: transform 0.3s;
+}
+.formatCard:hover {
+  transform: scale(1.05);
 }
 .formatList {
   gap: 20px;
@@ -187,16 +205,22 @@ main {
 
 /* повара */
 .cookersTilte {
-  width: 532px;
   margin: 0 auto 80px;
+  position: relative;
 }
 .cookersTilte::before {
   content: " ";
+  position: absolute;
+  left: 0;
   display: block;
   width: 352px;
   border: 2px solid var(--colorChefTilte);
+  bottom: 24px;
 }
 .cookersTilte::after {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
   content: " ";
   display: block;
   width: 352px;
@@ -273,7 +297,9 @@ main {
 }
 .contactMap {
   flex-shrink: 0;
+  margin: 0 -24px;
   border-radius: 16px;
+  border: none;
 }
 .contacts {
   padding-bottom: 96px;
@@ -290,12 +316,32 @@ main {
 }
 
 footer {
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #31261a;
   background-image: url("./img/footer.jpg");
   padding: 32px 0;
+}
+footer::after {
+  position: absolute;
+  background-image: url("./img/bread1.png");
+  content: " ";
+  width: 180px;
+  height: 120px;
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+footer::before {
+  position: absolute;
+  background-image: url("./img/bread2.png");
+  content: " ";
+  width: 370px;
+  height: 190px;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
 }
 .addressLink {
   gap: 20px;
@@ -323,4 +369,37 @@ footer {
 .addressUl,
 .copyRight {
   flex-grow: 1;
+}
+/* модальне окно */
+.backdrop {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
+  background-color: var(--primaryColorLite);
+  border-radius: 32px;
+}
+.backdrop.isHidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modalBtnClose {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
