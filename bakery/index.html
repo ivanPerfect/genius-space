@@ -184,20 +184,20 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <form autocomplete="on" novalidate name="contactForm">
+              <form autocomplete="on" name="contactForm">
                 <div class="formField">
                   <label class="formLabel" for="userName"></label>
-                  <input class="input" type="text" name="userName" id="userName" placeholder="Ім'я"/>
+                  <input class="input" type="text" name="userName" id="userName" placeholder="Ім'я" required/>
                 </div>
                 
                 <div class="formField">
                   <label class="formLabel" for="userPhone"></label>
-                  <input class="input" type="tel" name="userPhone" id="userPhone" placeholder="Телефон"/>
+                  <input class="input" type="tel" name="userPhone" id="userPhone" placeholder="Телефон" required/>
                 </div>
               
                 <div class="formField">
                   <label class="formLabel" for="userEmail"></label>
-                  <input class="input" type="email" name="userEmail" id="userEmail" placeholder="E-mail"/>
+                  <input class="input" type="email" name="userEmail" id="userEmail" placeholder="E-mail" required/>
                 </div>
                 
                 <button class="formBtn button1" type="submit">Замовити дзвінок</button>
@@ -267,25 +267,25 @@
       </div>
     </footer>
 
-    <div class="backdrop isHidden">
+    <div class="backdrop "> 
       <div class="modal">
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <button type="button" class="modalBtnClose">close</button>
-        <form autocomplete="on" novalidate name="orderForm">
+        <form autocomplete="on" name="orderForm">
           <div class="formField">
             <label class="formLabel" for="userName"></label>
-            <input class="input" type="text" name="userName" id="userName" placeholder="Ім'я"/>
+            <input class="input" required type="text" name="userName" id="userName" placeholder="Ім'я" required/>
           </div>
           
           <div class="formField">
             <label class="formLabel" for="userPhone"></label>
-            <input class="input" type="tel" name="userPhone" id="userPhone" placeholder="Телефон"/>
+            <input class="input" required type="tel" name="userPhone" id="userPhone" placeholder="Телефон" required pattern="^\+[0-9]{12}"/>
           </div>
         
           <div class="formField">
             <label class="formLabel" for="userEmail"></label>
-            <input class="input" type="email" name="userEmail" id="userEmail" placeholder="E-mail"/>
+            <input class="input" required type="email" name="userEmail" id="userEmail" placeholder="E-mail" required />
           </div>
           
           <button class="formBtn button1" type="submit">Замовити дзвінок</button>
