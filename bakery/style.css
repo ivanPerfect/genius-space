@@ -4,7 +4,7 @@
   --primaryColorDark: #31261a;
   --colorBrandDark: #465929;
   --colorChefTilte: #cfcfbc;
-  --colorBorder: #a18268;
+  --colorBorder: #a28268;
 }
 body {
   font-size: 18px;
@@ -385,6 +385,7 @@ footer::before {
   transition: opacity 0.3s, visibility 0.3s;
 }
 .modal {
+  padding: 128px;
   position: relative;
   width: 100%;
   max-width: 880px;
@@ -402,4 +403,43 @@ footer::before {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+/* forma */
+.input {
+  width: 100%;
+  padding: 16px 42px;
+  border:3px solid var(--colorBorder);
+  border-radius: 8px;
+  background-color: transparent;
+}
+.input:focus {
+  border:3px solid var(--colorBrand);
+  outline: none;
+}
+.input::placeholder{
+  color: var(--colorBrand);
+}
+.formLabel {
+  display: block;
+  
+}
+.formField {
+  margin-bottom: 32px;
+}
+.formBtn{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.formTerm {
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  max-width: 220px;
+}
+.formPolitic{
+  color: var(--colorBrandDark);
+  text-underline-offset: 2px;
 }

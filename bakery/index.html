@@ -26,7 +26,9 @@
               <li><a class="headLink" href="#contacts">Контакти</a></li>
             </ul>
           </nav>
-          <button type="button" class="button1 modalBtnOpen">Замовити дзвінок</button>
+          <button type="button" class="button1 modalBtnOpen">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -73,7 +75,8 @@
       <section class="section" id="cookers">
         <div class="container">
           <h1 class="sectionTitle center cookersTilte">
-            Наші найкращі <br> <span> шеф -кухарі</span>
+            Наші найкращі <br />
+            <span> шеф -кухарі</span>
           </h1>
           <ul class="cookersList">
             <li class="cookersItem">
@@ -181,6 +184,24 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <form autocomplete="on" novalidate name="contactForm">
+                <div class="formField">
+                  <label class="formLabel" for="userName"></label>
+                  <input class="input" type="text" name="userName" id="userName" placeholder="Ім'я"/>
+                </div>
+                
+                <div class="formField">
+                  <label class="formLabel" for="userPhone"></label>
+                  <input class="input" type="tel" name="userPhone" id="userPhone" placeholder="Телефон"/>
+                </div>
+              
+                <div class="formField">
+                  <label class="formLabel" for="userEmail"></label>
+                  <input class="input" type="email" name="userEmail" id="userEmail" placeholder="E-mail"/>
+                </div>
+                
+                <button class="formBtn button1" type="submit">Замовити дзвінок</button>
+                <p class="formTerm">Натискаючи на кнопку я погоджуюсь  <a class='formPolitic' href="">з політикою конфіденційності</a></p>
             </div>
             <iframe
               class="contactMap"
@@ -248,7 +269,28 @@
 
     <div class="backdrop isHidden">
       <div class="modal">
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <button type="button" class="modalBtnClose">close</button>
+        <form autocomplete="on" novalidate name="orderForm">
+          <div class="formField">
+            <label class="formLabel" for="userName"></label>
+            <input class="input" type="text" name="userName" id="userName" placeholder="Ім'я"/>
+          </div>
+          
+          <div class="formField">
+            <label class="formLabel" for="userPhone"></label>
+            <input class="input" type="tel" name="userPhone" id="userPhone" placeholder="Телефон"/>
+          </div>
+        
+          <div class="formField">
+            <label class="formLabel" for="userEmail"></label>
+            <input class="input" type="email" name="userEmail" id="userEmail" placeholder="E-mail"/>
+          </div>
+          
+          <button class="formBtn button1" type="submit">Замовити дзвінок</button>
+          <p class="formTerm">Натискаючи на кнопку я погоджуюсь  <a class='formPolitic' href="">з політикою конфіденційності</a></p>
+        </form>
       </div>
     </div>
   </body>
