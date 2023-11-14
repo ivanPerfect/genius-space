@@ -1,0 +1,36 @@
+header {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  width: 100%;
+}
+
+.headConteiner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.headerNav {
+  gap: 40px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.headerUl {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+main {
+  background-color: var(--primaryColorLite);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}/*# sourceMappingURL=header.css.map */

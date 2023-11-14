@@ -1,0 +1,9 @@
+.headLink {
+  color: var(--primaryColorLite);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.headLink:hover {
+  color: var(--colorBrandDark);
+}/*# sourceMappingURL=links.css.map */

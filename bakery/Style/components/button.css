@@ -1,0 +1,15 @@
+.button1 {
+  background-color: var(--colorBrand);
+  color: var(--primaryColorLite);
+  border: 2px solid var(--colorBrand);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 16px 32px;
+}
+
+.button1:hover {
+  background-color: transparent;
+  color: var(--colorBrand);
+  cursor: pointer;
+}/*# sourceMappingURL=button.css.map */
