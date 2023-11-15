@@ -101,7 +101,13 @@
 }
 
 .cookersText p {
+  font-size: 14px;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 760px) {
+  .cookersText p {
+    font-size: 18px;
+  }
 }
 
 .cookersText p:last-child {

@@ -29,7 +29,7 @@
   text-align: center;
 }
 
-.formatCard {
+.formatCC {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -39,6 +39,9 @@
   border-radius: 10px;
   height: 444px;
   padding: 24px;
+}
+
+.formatCard {
   transition: transform 0.3s;
 }
 
@@ -53,17 +56,6 @@
 
 .formatCard:hover {
   transform: scale(1.05);
-}
-
-.formatList {
-  gap: 20px;
-  padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.formatLi {
-  flex-basis: calc((100% - 40px) / 3);
 }
 
 .shop1 span {
@@ -95,7 +87,7 @@
   text-decoration: none;
 }
 
-.formatConteiner {
+.slider {
   display: flex;
   gap: 32px;
   align-items: center;
@@ -111,4 +103,8 @@
 .buttonFormat:hover {
   cursor: pointer;
   background-color: var(--colorBorder);
+}
+
+.fCont {
+  overflow: hidden;
 }/*# sourceMappingURL=formats.css.map */

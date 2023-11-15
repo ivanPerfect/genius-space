@@ -41,6 +41,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
@@ -151,7 +153,7 @@ ul {
 .button1 {
   display: none;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 480px) {
   .button1 {
     background-color: var(--colorBrand);
     color: var(--primaryColorLite);
@@ -355,7 +357,7 @@ ul {
   text-align: center;
 }
 
-.formatCard {
+.formatCC {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -365,6 +367,9 @@ ul {
   border-radius: 10px;
   height: 444px;
   padding: 24px;
+}
+
+.formatCard {
   transition: transform 0.3s;
 }
 
@@ -379,17 +384,6 @@ ul {
 
 .formatCard:hover {
   transform: scale(1.05);
-}
-
-.formatList {
-  gap: 20px;
-  padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.formatLi {
-  flex-basis: calc((100% - 40px) / 3);
 }
 
 .shop1 span {
@@ -421,7 +415,7 @@ ul {
   text-decoration: none;
 }
 
-.formatConteiner {
+.slider {
   display: flex;
   gap: 32px;
   align-items: center;
@@ -437,6 +431,10 @@ ul {
 .buttonFormat:hover {
   cursor: pointer;
   background-color: var(--colorBorder);
+}
+
+.fCont {
+  overflow: hidden;
 }
 
 :root {
@@ -541,7 +539,13 @@ ul {
 }
 
 .cookersText p {
+  font-size: 14px;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 760px) {
+  .cookersText p {
+    font-size: 18px;
+  }
 }
 
 .cookersText p:last-child {
@@ -564,14 +568,34 @@ ul {
 
 .contactConteiner {
   display: flex;
-  gap: 32px;
+  gap: 24px;
+  flex-direction: column;
+}
+@media screen and (min-width: 760px) {
+  .contactConteiner {
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 
 .contactMap {
   flex-shrink: 0;
-  margin: 0 -24px;
   border-radius: 16px;
   border: none;
+  margin: 0 -24px;
+}
+@media screen and (min-width: 760px) {
+  .contactMap {
+    width: 200px;
+    margin: auto;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contactMap {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 .contacts {
@@ -590,16 +614,29 @@ ul {
 /* footer */
 .footerConteiner {
   display: flex;
+  flex-direction: column;
   gap: 20px;
+}
+@media screen and (min-width: 760px) {
+  .footerConteiner {
+    flex-direction: row;
+  }
 }
 
 .footerNav {
-  flex-basis: 50%;
   display: flex;
+  flex-direction: column;
   gap: 20px;
+}
+@media screen and (min-width: 760px) {
+  .footerNav {
+    flex-basis: 50%;
+    flex-direction: row;
+  }
 }
 
 footer {
+  text-align: center;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -607,6 +644,11 @@ footer {
   background-color: #31261a;
   background-image: url("../img/footer.jpg");
   padding: 32px 0;
+}
+@media screen and (min-width: 760px) {
+  footer {
+    text-align: left;
+  }
 }
 
 footer::after {
@@ -633,11 +675,17 @@ footer::before {
 .addressLink {
   gap: 20px;
   display: flex;
+  flex-direction: column;
   flex-basis: 50%;
   font-style: normal;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+}
+@media screen and (min-width: 760px) {
+  .addressLink {
+    flex-direction: row;
+  }
 }
 
 .addressLink a {
@@ -793,4 +841,22 @@ footer::before {
   position: absolute;
   top: 16px;
   right: 24px;
+}
+
+.pagBtn {
+  background-color: var(--colorBrand);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.pagi {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.active {
+  background-color: var(--colorChefTilte);
 }/*# sourceMappingURL=main.css.map */

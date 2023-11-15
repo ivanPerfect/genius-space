@@ -1,15 +1,24 @@
 @import '../utils/var';/* footer */
 .footerConteiner {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    @media screen and (min-width: $brakeTablet) {
+      flex-direction: row;
+    }
   }
   .footerNav {
-    flex-basis: 50%;
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    @media screen and (min-width: $brakeTablet) {
+      flex-basis: 50%;
+      flex-direction: row;
+    }
   }
   
   footer {
+    text-align: center;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,6 +26,9 @@
     background-color: #31261a;
     background-image: url("../img/footer.jpg");
     padding: 32px 0;
+    @media screen and (min-width: $brakeTablet) {
+      text-align: left;
+    }
   }
   footer::after {
     position: absolute;
@@ -40,11 +52,15 @@
   .addressLink {
     gap: 20px;
     display: flex;
+    flex-direction: column;
     flex-basis: 50%;
     font-style: normal;
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
+    @media screen and (min-width: $brakeTablet) {
+      flex-direction: row;
+    }
   }
   .addressLink a {
     color: var(--primaryColorLite);
@@ -64,3 +80,7 @@
   .copyRight {
     flex-grow: 1;
   }
+
+  // .footerNav, .addressLink {
+
+  // }

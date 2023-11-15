@@ -1,18 +1,33 @@
 /* kontaktu  */
-@import '../utils/var';
+@import "../utils/var";
 .contactsSection {
-    margin-bottom: 16px;
-  }
-  .contactConteiner {
-    display: flex;
+  margin-bottom: 16px;
+}
+.contactConteiner {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  @media screen and (min-width: $brakeTablet) {
+    flex-direction: row;
     gap: 32px;
   }
-  .contactMap {
-    flex-shrink: 0;
-    margin: 0 -24px;
-    border-radius: 16px;
-    border: none;
+}
+.contactMap {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: none;
+  margin: 0 -24px;
+
+  @media screen and (min-width: $brakeTablet) {
+    width: 200px;
+    margin: auto;
+    height: 600px;
   }
-  .contacts {
-    padding-bottom: 96px;
+  @media screen and (min-width: $brakeDesktop) {
+    width: 600px;
+    height: 600px;
   }
+}
+.contacts {
+  padding-bottom: 96px;
+}

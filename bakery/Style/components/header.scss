@@ -39,7 +39,7 @@ ul {
   list-style: none;
 }
 .button1 {
-  @media screen and (min-width: $brakeDesktop) {
+  @media screen and (min-width: $brakeModile) {
     background-color: var(--colorBrand);
     color: var(--primaryColorLite);
     border: 2px solid var(--colorBrand);

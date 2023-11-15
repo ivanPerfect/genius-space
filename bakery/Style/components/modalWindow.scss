@@ -1,6 +1,6 @@
 @import '../utils/var';
 .backdrop {
-    padding: 20px 0;
+    padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
     transition: opacity 0.3s, visibility 0.3s;
   }
   .modal {
-    padding: 128px;
+    padding: 48px;
     position: relative;
     width: 100%;
     max-width: 880px;

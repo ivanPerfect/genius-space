@@ -58,7 +58,7 @@ ul {
 .button1 {
   display: none;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 480px) {
   .button1 {
     background-color: var(--colorBrand);
     color: var(--primaryColorLite);

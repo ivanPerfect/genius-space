@@ -1,0 +1,15 @@
+.pagBtn {
+    background-color: var(--colorBrand);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.pagi {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-top: 32px;
+}
+.active {
+    background-color: var(--colorChefTilte);
+}

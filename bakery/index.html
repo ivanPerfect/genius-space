@@ -11,6 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./swiper.js" defer></script>
     <script src="./mobileModal.js" defer></script>
     <script src="./modal.js" defer></script>
   </head>
@@ -30,13 +39,17 @@
           <button type="button headerBtn" class="button1 modalBtnOpen">
             Замовити дзвінок
           </button>
-          <button class='headerMenu menuBtnOpen'>
-            <img  class='headerMenuBtn 'src="./img/Vector.png" alt="Vector" width="24px" height="24px">
+          <button class="headerMenu menuBtnOpen">
+            <img
+              class="headerMenuBtn"
+              src="./img/Vector.png"
+              alt="Vector"
+              width="24px"
+              height="24px"
+            />
           </button>
           <div class="mobileMenu">
-            <button type="button" class="menuBtnClose btnClose">
-              close
-            </button>
+            <button type="button" class="menuBtnClose btnClose">close</button>
           </div>
         </div>
       </div>
@@ -131,64 +144,139 @@
       <section class="section" id="formats">
         <div class="container">
           <h2 class="sectionTitle center formatsTilte">Формати</h2>
-          <div class="formatConteiner">
+          <div class="formatConteiner slider">
             <button class="buttonFormat">
               <img
-                class="arrow"
+                class="leftArrow"
                 src="./img/leftArrow.svg"
                 alt="leftArrow"
                 srcset=""
               />
             </button>
-            <ul class="formatList">
-              <li class="formatLi">
-                <article class="formatCard">
-                  <img class="formatImage" src="./img/warlus.jpg" alt="" srcset="">
-                  <h3 class="formTitle">Walrus</h3>
-                  <div class="textFormat">
-                    <p>Площа: до 120 м2</p>
-                    <p>Меню: розширене меню</p>
-                    <p>
-                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                      офіціанти-різнороби
-                    </p>
-                    <p>Посадкові місця: є</p>
-                  </div>
-                </article>
-              </li>
-              <li class="formatLi">
-                <article class="formatCard">
-                  <img class="formatImage" src="./img/horseshoe.jpg" alt="" srcset="">
-                  <h3 class="formTitle">Horseshoe</h3>
-                  <div class="textFormat">
-                    <p>Площа: до 25 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-                    <p>Посадкові місця: відсутні</p>
-                  </div>
-                </article>
-              </li>
-              <li class="formatLi">
-                <article class="formatCard">
-                  <img class="formatImage" src="./img/handlebar.jpg" alt="" srcset="">
-                  <h3 class="formTitle">Handlebar</h3>
-                  <div class="textFormat">
-                    <p>Площа: до 15 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                    <p>Посадкові місця: відсутні</p>
-                  </div>
-                </article>
-              </li>
-            </ul>
+            <div class="swiper-conteiner formatConteiner fCont">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="formatCard">
+                    <div class="formatCC">
+                      <img
+                        class="formatImage"
+                        src="./img/warlus.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                      <h3 class="formTitle">Walrus</h3>
+                      <div class="textFormat">
+                        <p>Площа: до 120 м2</p>
+                        <p>Меню: розширене меню</p>
+                        <p>
+                          Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря,
+                          2 офіціанти-різнороби
+                        </p>
+                        <p>Посадкові місця: є</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="formatCard">
+                    <div class="formatCC">
+                      <img
+                        class="formatImage"
+                        src="./img/horseshoe.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                      <h3 class="formTitle">Horseshoe</h3>
+                      <div class="textFormat">
+                        <p>Площа: до 25 м2</p>
+                        <p>Меню: найпопулярніші позиції меню</p>
+                        <p>
+                          Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                        </p>
+                        <p>Посадкові місця: відсутні</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="formatCard">
+                    <div class="formatCC">
+                      <img
+                        class="formatImage"
+                        src="./img/horseshoe.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                      <h3 class="formTitle">Horseshoe</h3>
+                      <div class="textFormat">
+                        <p>Площа: до 25 м2</p>
+                        <p>Меню: найпопулярніші позиції меню</p>
+                        <p>
+                          Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                        </p>
+                        <p>Посадкові місця: відсутні</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="formatCard">
+                    <div class="formatCC">
+                      <img
+                        class="formatImage"
+                        src="./img/horseshoe.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                      <h3 class="formTitle">Horseshoe</h3>
+                      <div class="textFormat">
+                        <p>Площа: до 25 м2</p>
+                        <p>Меню: найпопулярніші позиції меню</p>
+                        <p>
+                          Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                        </p>
+                        <p>Посадкові місця: відсутні</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="formatCard">
+                    <div class="formatCC">
+                      <img
+                        class="formatImage"
+                        src="./img/horseshoe.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                      <h3 class="formTitle">Horseshoe</h3>
+                      <div class="textFormat">
+                        <p>Площа: до 25 м2</p>
+                        <p>Меню: найпопулярніші позиції меню</p>
+                        <p>
+                          Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                        </p>
+                        <p>Посадкові місця: відсутні</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagi">
+                <button class="pagBtn active" aria-label="Go to slide 1"></button>
+                <button class="pagBtn active" aria-label="Go to slide 2"></button>
+                <button class="pagBtn active" aria-label="Go to slide 3"></button>
+                <button class="pagBtn active" aria-label="Go to slide 4"></button>
+              </div>
+            </div>
             <button class="buttonFormat">
-              <img class="arrow" src="./img/rightArrow.svg" alt="right" />
+              <img class="rightArrow" src="./img/rightArrow.svg" alt="right" />
             </button>
           </div>
         </div>
       </section>
 
-      <!-- <section class="section contacts" id="contacts">
+      <section class="section contacts" id="contacts">
         <div class="container">
           <div class="contactConteiner">
             <div class="contactForm">
@@ -218,8 +306,6 @@
             <iframe
               class="contactMap"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699360306712!5m2!1suk!2sua"
-              width="600px"
-              height="450px"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -227,10 +313,10 @@
             ></iframe>
           </div>
         </div>
-      </section>  -->
+      </section> 
     </main>
 
-    <!-- <footer>
+    <footer>
       <div class="container">
         <div class="footerConteiner">
           <nav class="footerNav">
@@ -277,9 +363,9 @@
           </address>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <div class="backdrop isHidden"> 
+    <div class="backdrop isHidden">
       <div class="modal">
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
@@ -287,21 +373,51 @@
         <form autocomplete="on" name="orderForm">
           <div class="formField">
             <label class="formLabel" for="userName"></label>
-            <input class="input" required type="text" name="userName" id="userName" placeholder="Ім'я" required/>
+            <input
+              class="input"
+              required
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="Ім'я"
+              required
+            />
           </div>
-          
+
           <div class="formField">
             <label class="formLabel" for="userPhone"></label>
-            <input class="input" required type="tel" name="userPhone" id="userPhone" placeholder="Телефон" required pattern="^\+[0-9]{12}"/>
+            <input
+              class="input"
+              required
+              type="tel"
+              name="userPhone"
+              id="userPhone"
+              placeholder="Телефон"
+              required
+              pattern="^\+[0-9]{12}"
+            />
           </div>
-        
+
           <div class="formField">
             <label class="formLabel" for="userEmail"></label>
-            <input class="input" required type="email" name="userEmail" id="userEmail" placeholder="E-mail" required />
+            <input
+              class="input"
+              required
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              placeholder="E-mail"
+              required
+            />
           </div>
-          
-          <button class="formBtn button1" type="submit">Замовити дзвінок</button>
-          <p class="formTerm">Натискаючи на кнопку я погоджуюсь  <a class='formPolitic' href="">з політикою конфіденційності</a></p>
+
+          <button class="formBtn button1" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="formTerm">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="formPolitic" href="">з політикою конфіденційності</a>
+          </p>
         </form>
       </div>
     </div>

@@ -14,14 +14,34 @@
 
 .contactConteiner {
   display: flex;
-  gap: 32px;
+  gap: 24px;
+  flex-direction: column;
+}
+@media screen and (min-width: 760px) {
+  .contactConteiner {
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 
 .contactMap {
   flex-shrink: 0;
-  margin: 0 -24px;
   border-radius: 16px;
   border: none;
+  margin: 0 -24px;
+}
+@media screen and (min-width: 760px) {
+  .contactMap {
+    width: 200px;
+    margin: auto;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contactMap {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 .contacts {

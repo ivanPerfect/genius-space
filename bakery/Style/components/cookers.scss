@@ -72,7 +72,11 @@
     }
   }
   .cookersText p {
+    font-size: 14px;
     margin-bottom: 24px;
+    @media screen and (min-width: $brakeTablet) {
+      font-size: 18px;
+    }
   }
   .cookersText p:last-child {
     margin-bottom: 0;
