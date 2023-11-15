@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* повара */
+.cookersTilte {
+  margin: 0 auto 80px;
+  position: relative;
+}
+
+.cookersTilte::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 352px;
+  border: 2px solid var(--colorChefTilte);
+  bottom: 24px;
+}
+
+.cookersTilte::after {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  content: " ";
+  display: block;
+  width: 352px;
+  border: 2px solid var(--colorChefTilte);
+}
+
+.sectionTitle span {
+  color: var(--colorBrandDark);
+}
+
+.name {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.cookerImg {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--primaryColorLite), -16px 16px 0 1px var(--colorBorder);
+}
+
+.cookersList {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.cookersItem {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.cookersCard {
+  display: flex;
+  gap: 30px;
+}
+
+.cookersText p {
+  margin-bottom: 24px;
+}
+
+.cookersText p:last-child {
+  margin-bottom: 0;
+}/*# sourceMappingURL=cookers.css.map */

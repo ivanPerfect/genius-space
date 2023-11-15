@@ -1,0 +1,74 @@
+/* footer */
+.footerConteiner {
+  display: flex;
+  gap: 20px;
+}
+
+.footerNav {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+footer {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #31261a;
+  background-image: url("../img/footer.jpg");
+  padding: 32px 0;
+}
+
+footer::after {
+  position: absolute;
+  background-image: url("../img/bread1.png");
+  content: " ";
+  width: 180px;
+  height: 120px;
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+footer::before {
+  position: absolute;
+  background-image: url("../img/bread2.png");
+  content: " ";
+  width: 370px;
+  height: 190px;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
+.addressLink {
+  gap: 20px;
+  display: flex;
+  flex-basis: 50%;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.addressLink a {
+  color: var(--primaryColorLite);
+}
+
+.linkAdress {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.property {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(161, 130, 104);
+}
+
+.footerLogo,
+.footerUl,
+.addressUl,
+.copyRight {
+  flex-grow: 1;
+}/*# sourceMappingURL=footer.css.map */

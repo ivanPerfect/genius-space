@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     />
+    <script src="./mobileModal.js" defer></script>
     <script src="./modal.js" defer></script>
   </head>
   <body>
@@ -26,9 +27,17 @@
               <li><a class="headLink" href="#contacts">Контакти</a></li>
             </ul>
           </nav>
-          <button type="button" class="button1 modalBtnOpen">
+          <button type="button headerBtn" class="button1 modalBtnOpen">
             Замовити дзвінок
           </button>
+          <button class='headerMenu menuBtnOpen'>
+            <img  class='headerMenuBtn 'src="./img/Vector.png" alt="Vector" width="24px" height="24px">
+          </button>
+          <div class="mobileMenu">
+            <button type="button" class="menuBtnClose btnClose">
+              close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -67,12 +76,12 @@
                 та висока якість обслуговування!
               </p>
             </div>
-            <img src="./img/image1.jpg" alt="image" />
+            <img class="traditionImg" src="./img/image1.jpg" alt="image" />
           </div>
         </div>
       </section>
 
-      <section class="section" id="cookers">
+      <!-- <section class="section" id="cookers">
         <div class="container">
           <h1 class="sectionTitle center cookersTilte">
             Наші найкращі <br />
@@ -177,9 +186,9 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section contacts" id="contacts">
+      <!-- <section class="section contacts" id="contacts">
         <div class="container">
           <div class="contactConteiner">
             <div class="contactForm">
@@ -218,10 +227,10 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section>  -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="container">
         <div class="footerConteiner">
           <nav class="footerNav">
@@ -268,7 +277,7 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop isHidden"> 
       <div class="modal">

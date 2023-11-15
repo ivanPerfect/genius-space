@@ -1,32 +1,64 @@
 header {
-    position: absolute;
-    left: 0;
-    top: 32px;
-    width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 16px;
+  width: 100%;
+  @media screen and (min-width: $brakeDesktop) {
+    padding-top: 32px;
   }
-  .headConteiner {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  .headerNav {
-    gap: 40px;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-  }
-  .headerUl {
+}
+.headConteiner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.headerNav {
+  gap: 40px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.headerUl {
+  display: none;
+  @media screen and (min-width: $brakeDesktop) {
     display: flex;
     gap: 64px;
     flex-grow: 1;
     justify-content: center;
   }
-  
-  main {
-    background-color: var(--primaryColorLite);
+}
+
+main {
+  background-color: var(--primaryColorLite);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.button1 {
+  @media screen and (min-width: $brakeDesktop) {
+    background-color: var(--colorBrand);
+    color: var(--primaryColorLite);
+    border: 2px solid var(--colorBrand);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 16px 32px;
+    display: block;
   }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: none;
+}
+.button1:hover {
+  background-color: transparent;
+  color: var(--colorBrand);
+  cursor: pointer;
+}
+.headerMenu {
+  background-color: transparent;
+  border: 1px solid var(--primaryColorLite);
+  @media screen and (min-width: $brakeDesktop) {
+    display: none;
   }
+}

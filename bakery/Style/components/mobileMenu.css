@@ -1,0 +1,19 @@
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primaryColorLite);
+  transition: transform 0.3s;
+  transform: translateX(-100%);
+}
+.mobileMenu.isOpen {
+  transform: translateX(0);
+}
+
+.btnClose {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}/*# sourceMappingURL=mobileMenu.css.map */

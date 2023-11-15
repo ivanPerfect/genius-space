@@ -24,6 +24,11 @@ header {
   flex-grow: 1;
   justify-content: center;
 }
+@media screen and (max-width: brakeDesktop) {
+  .headerUl {
+    display: none;
+  }
+}
 
 main {
   background-color: var(--primaryColorLite);
@@ -33,4 +38,34 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.button1 {
+  background-color: var(--colorBrand);
+  color: var(--primaryColorLite);
+  border: 2px solid var(--colorBrand);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 16px 32px;
+}
+@media screen and (max-width: 1280px) {
+  .button1 {
+    display: none;
+  }
+}
+
+.button1:hover {
+  background-color: transparent;
+  color: var(--colorBrand);
+  cursor: pointer;
+}
+
+.headerMenu {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .headerMenu {
+    display: block;
+  }
 }/*# sourceMappingURL=header.css.map */

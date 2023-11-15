@@ -7,6 +7,7 @@
 }
 
 .heroTitle {
+  line-height: 1;
   color: var(--primaryColorLite);
   text-align: center;
   font-size: 128px;

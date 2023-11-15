@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* традиции */
+.traditionContainer {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.traditionTilte {
+  margin-bottom: 42px;
+}
+
+.traditionContent {
+  max-width: 710px;
+}
+
+.tradition {
+  padding-top: 96px;
+}
+
+.traditionImg {
+  border-radius: 400px 400px 0px 0px;
+}/*# sourceMappingURL=traditions.css.map */

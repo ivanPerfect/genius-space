@@ -1,15 +1,32 @@
 .adventeges {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--colorBorder);
+  border-radius: 24px;
+  padding: 24px 40px;
+  @media screen and (min-width: $brakeTablet) {
+    flex-direction: row;
     background-color: var(--colorBrand);
     gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
   }
-  .adventege {
-    padding: 16px;
+}
+.adventege {
+  padding: 16px;
+  @media screen and (min-width: $brakeTablet) {
     background-color: var(--colorBrand);
   }
-  .adventeges li {
+}
+.adventeges li {
+  font-size: 14px;
+  font-weight: 300;
+  @media screen and (min-width: $brakeTablet) {
     color: var(--primaryColorLite);
     font-size: 20px;
-    font-weight: 300;
   }
+}

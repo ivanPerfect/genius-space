@@ -1,0 +1,94 @@
+  /* format  */
+  .sectionTitle {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+    text-decoration: none;
+  }
+  .formTitle {
+    color: var(--primaryColorLite);
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .textFormat {
+    color: var(--primaryColorLite);
+  }
+  .sectionTitle.center {
+    text-align: center;
+  }
+  .formatCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    background-image: linear-gradient(
+      180deg,
+      rgba(49, 38, 26, 0) 55.21%,
+      rgba(49, 38, 26, 0.71) 72.92%,
+      #31261a 100%
+    );
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 444px;
+    padding: 24px;
+    transition: transform 0.3s;
+  }
+  .formatImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .formatCard:hover {
+    transform: scale(1.05);
+  }
+  .formatList {
+    gap: 20px;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formatLi {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+  .shop1 span {
+    color: var(--colorBrand);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .shop2 span {
+    color: var(--colorBrand);
+    font-weight: 600;
+  }
+
+  .formTitle {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .formatsTilte {
+    margin-bottom: 80px;
+  }
+  .textFormat p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .sectionTitle ul {
+    text-decoration: none;
+  }
+  .formatConteiner {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .buttonFormat {
+    max-width: 44px;
+    max-height: 44px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .buttonFormat:hover {
+    cursor: pointer;
+    background-color: var(--colorBorder);
+  }
