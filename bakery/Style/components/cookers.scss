@@ -1,23 +1,33 @@
-  /* повара */
+@import '../utils/var';
+/* повара */
   .cookersTilte {
-    margin: 0 auto 80px;
+    margin: 0 auto 24px;
     position: relative;
+    @media screen and (min-width: $brakeDesktop) {
+      margin-bottom: 80px;
+    }
   }
   .cookersTilte::before {
     content: " ";
     position: absolute;
     left: 0;
-    display: block;
+    display: none;
     width: 352px;
     border: 2px solid var(--colorChefTilte);
     bottom: 24px;
+    @media screen and (min-width: $brakeDesktop) {
+      display: block;
+    }
   }
   .cookersTilte::after {
+    @media screen and (min-width: $brakeDesktop) {
+      display: block;
+    }
     position: absolute;
     right: 0;
     bottom: 24px;
     content: " ";
-    display: block;
+    display: none;;
     width: 352px;
     border: 2px solid var(--colorChefTilte);
   }
@@ -30,21 +40,36 @@
     margin-bottom: 16px;
   }
   .cookerImg {
+    width: 140px;
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--primaryColorLite),
       -16px 16px 0 1px var(--colorBorder);
+      @media screen and (min-width: $brakeTablet) {
+       width: 240px;
+      }
   }
   .cookersList {
     display: flex;
-    gap: 40px 30px;
+    flex-direction: column;
+    gap: 20px;
     flex-wrap: wrap;
+    @media screen and (min-width: $brakeDesktop) {
+      gap: 40px 30px;
+      flex-direction: row;
+    }
   }
   .cookersItem {
-    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: $brakeTablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
   .cookersCard {
     display: flex;
-    gap: 30px;
+    gap: 16px;
+    align-items: flex-start;
+    @media screen and (min-width: $brakeDesktop) {
+      gap: 30px;
+    }
   }
   .cookersText p {
     margin-bottom: 24px;

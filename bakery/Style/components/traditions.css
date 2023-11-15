@@ -1,4 +1,13 @@
 @charset "UTF-8";
+:root {
+  --colorBrand: #819b57;
+  --primaryColorLite: #faf4ea;
+  --primaryColorDark: #31261a;
+  --colorBrandDark: #465929;
+  --colorChefTilte: #cfcfbc;
+  --colorBorder: #a28268;
+}
+
 /* традиции */
 .traditionContainer {
   display: flex;
@@ -21,4 +30,10 @@
 
 .traditionImg {
   border-radius: 400px 400px 0px 0px;
+  display: none;
+}
+@media screen and (min-width: 760px) {
+  .traditionImg {
+    display: block;
+  }
 }/*# sourceMappingURL=traditions.css.map */

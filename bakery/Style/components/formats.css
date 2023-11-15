@@ -1,4 +1,13 @@
 /* format  */
+:root {
+  --colorBrand: #819b57;
+  --primaryColorLite: #faf4ea;
+  --primaryColorDark: #31261a;
+  --colorBrandDark: #465929;
+  --colorChefTilte: #cfcfbc;
+  --colorBorder: #a28268;
+}
+
 .sectionTitle {
   font-size: 64px;
   font-weight: 900;

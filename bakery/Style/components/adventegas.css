@@ -1,14 +1,49 @@
+:root {
+  --colorBrand: #819b57;
+  --primaryColorLite: #faf4ea;
+  --primaryColorDark: #31261a;
+  --colorBrandDark: #465929;
+  --colorChefTilte: #cfcfbc;
+  --colorBorder: #a28268;
+}
+
 .adventeges {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--colorBorder);
+  border-radius: 24px;
+  padding: 24px 40px;
+}
+@media screen and (min-width: 760px) {
+  .adventeges {
+    flex-direction: row;
+    background-color: var(--colorBrand);
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
 }
 
 .adventege {
   padding: 16px;
 }
+@media screen and (min-width: 760px) {
+  .adventege {
+    background-color: var(--colorBrand);
+  }
+}
+
 .adventeges li {
-  color: var(--primaryColorLite);
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 300;
+}
+@media screen and (min-width: 760px) {
+  .adventeges li {
+    color: var(--primaryColorLite);
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=adventegas.css.map */

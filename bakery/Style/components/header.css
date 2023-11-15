@@ -1,8 +1,23 @@
+:root {
+  --colorBrand: #819b57;
+  --primaryColorLite: #faf4ea;
+  --primaryColorDark: #31261a;
+  --colorBrandDark: #465929;
+  --colorChefTilte: #cfcfbc;
+  --colorBorder: #a28268;
+}
+
 header {
   position: absolute;
   left: 0;
-  top: 32px;
+  top: 0;
+  padding-top: 16px;
   width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  header {
+    padding-top: 32px;
+  }
 }
 
 .headConteiner {
@@ -19,14 +34,14 @@ header {
 }
 
 .headerUl {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
+  display: none;
 }
-@media screen and (max-width: brakeDesktop) {
+@media screen and (min-width: 1280px) {
   .headerUl {
-    display: none;
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
   }
 }
 
@@ -41,17 +56,18 @@ ul {
 }
 
 .button1 {
-  background-color: var(--colorBrand);
-  color: var(--primaryColorLite);
-  border: 2px solid var(--colorBrand);
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  padding: 16px 32px;
+  display: none;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .button1 {
-    display: none;
+    background-color: var(--colorBrand);
+    color: var(--primaryColorLite);
+    border: 2px solid var(--colorBrand);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 16px 32px;
+    display: block;
   }
 }
 
@@ -62,10 +78,11 @@ ul {
 }
 
 .headerMenu {
-  display: none;
+  background-color: transparent;
+  border: 1px solid var(--primaryColorLite);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .headerMenu {
-    display: block;
+    display: none;
   }
 }/*# sourceMappingURL=header.css.map */
