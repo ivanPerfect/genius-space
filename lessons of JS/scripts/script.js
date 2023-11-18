@@ -219,32 +219,63 @@
 
 // dz 21 
 
-class Abonet {
-    constructor(options){
-        this.name = options.name;
-    }
-    firstName='';
-    number = '';
+// class Abonet {
+//     constructor(options){
+//         this.name = options.name;
+//     }
+//     firstName='';
+//     number = '';
     
-    set name(newName){
-        const newName1 = newName.split(' ');
-        this.firstName=newName1[0];
-        this.number=newName1[1];
-    }
-    get name(){
-        return `name ${this.firstName} and number : ${this.number}`
-    }
-}
-const user1= new Abonet({
-    name: 'ivan 0997123123',
-})
-const user2= new Abonet({
-    name: 'asfa 12312312',
-})
-const user3= new Abonet({
-    name: 'asdfsadf 123123123',
-})
+//     set name(newName){
+//         const newName1 = newName.split(' ');
+//         this.firstName=newName1[0];
+//         this.number=newName1[1];
+//     }
+//     get name(){
+//         return `name ${this.firstName} and number : ${this.number}`
+//     }
+// }
+// const user1= new Abonet({
+//     name: 'ivan 0997123123',
+// })
+// const user2= new Abonet({
+//     name: 'asfa 12312312',
+// })
+// const user3= new Abonet({
+//     name: 'asdfsadf 123123123',
+// })
 
-console.log(user1);
-console.log(user2);
-console.log(user3);
+// console.log(user1);
+// console.log(user2);
+// console.log(user3);
+
+
+// dz22 
+
+// function Calc (){
+//     this.read = function() {
+//         this.a = +prompt('first number'),
+//         this.b = +prompt('second number')
+//     }
+
+//     this.mul = function (){
+//         return this.a*this.b;
+//     }
+//     this.sum = function(){
+//         return this.a+this.b;
+//     }
+// }
+
+// let calulator = new Calc();
+
+// calulator.read();
+
+// alert("summa : "+ calulator.sum())
+// alert('mul :'+ calulator.mul());
+
+
+// dz 23
+
+let div = document.querySelector('div');
+
+alert(div.dataset.setName);
