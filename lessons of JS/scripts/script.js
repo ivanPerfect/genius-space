@@ -179,18 +179,72 @@
 
 // dz 19
 
-const girls = [
-  { age: 23, name: "Оля" },
-  { age: 29, name: "Аня" },
-  { age: 10, name: "Юля" },
-  { age: 20, name: "Катя" },
-];
+// const girls = [
+//   { age: 23, name: "Оля" },
+//   { age: 29, name: "Аня" },
+//   { age: 10, name: "Юля" },
+//   { age: 20, name: "Катя" },
+// ];
 
-let arr = girls.map((item)=>item.age);
+// let arr = girls.map((item)=>item.age);
 
-console.log(arr);
+// console.log(arr);
+
+// let sum = arr.reduce((summ, item )=>summ+item)/arr.length;
+
+// console.log(sum);
+
+// dz 20
+
+// function checkAge(age) {
+//   return (age > 18) ? true : confirm('Родители разрешили?');
+// }
+
+// // function checkAge(age) {
+// //   return (age > 18) || confirm('Родители разрешили?');
+// // }
+
+// checkAge(15);
 
 
-let sum = arr.reduce((summ, item )=>summ+item)/arr.length;
+// dz 20
 
-console.log(sum);
+// function min(a, b ){
+//   if (a>b){
+//     return console.log(a);
+//   }
+//   return console.log(b);
+// }
+// min(5, 10)
+
+// dz 21 
+
+class Abonet {
+    constructor(options){
+        this.name = options.name;
+    }
+    firstName='';
+    number = '';
+    
+    set name(newName){
+        const newName1 = newName.split(' ');
+        this.firstName=newName1[0];
+        this.number=newName1[1];
+    }
+    get name(){
+        return `name ${this.firstName} and number : ${this.number}`
+    }
+}
+const user1= new Abonet({
+    name: 'ivan 0997123123',
+})
+const user2= new Abonet({
+    name: 'asfa 12312312',
+})
+const user3= new Abonet({
+    name: 'asdfsadf 123123123',
+})
+
+console.log(user1);
+console.log(user2);
+console.log(user3);
