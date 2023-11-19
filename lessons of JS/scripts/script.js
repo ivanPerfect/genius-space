@@ -276,6 +276,41 @@
 
 // dz 23
 
-let div = document.querySelector('div');
+// let div = document.querySelector('div');
 
-alert(div.dataset.setName);
+// alert(div.dataset.setName);
+
+// dz 24
+
+// const btn = document.querySelector('button');
+// const text = document.querySelector('#text');
+
+// // btn.addEventListener('click', ()=>{
+// //     text.style.display = 'none';
+// // })
+// btn.addEventListener('click', ()=>{
+//     btn.style.display = 'none';
+// })
+
+// dz 25
+
+// // помістіть кожен текстовий вузол у елемент <span>
+//     // він займає саме те місце, яке необхідне для тексту,
+//     for (let li of tree.querySelectorAll('li')) {
+//         let span = document.createElement('span');
+//         li.prepend(span);
+//         span.append(span.nextSibling); // поміщаємо текстовий вузол у span
+//       }
+  
+//       // ловимо кліки на всьому дереві
+//       tree.onclick = function(event) {
+  
+//         if (event.target.tagName != 'SPAN') {
+//           return;
+//         }
+  
+//         let childrenContainer = event.target.parentNode.querySelector('ul');
+//         if (!childrenContainer) return; // дітей немає
+  
+//         childrenContainer.hidden = !childrenContainer.hidden;
+//       }
