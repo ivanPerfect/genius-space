@@ -206,7 +206,6 @@
 
 // checkAge(15);
 
-
 // dz 20
 
 // function min(a, b ){
@@ -217,7 +216,7 @@
 // }
 // min(5, 10)
 
-// dz 21 
+// dz 21
 
 // class Abonet {
 //     constructor(options){
@@ -225,7 +224,7 @@
 //     }
 //     firstName='';
 //     number = '';
-    
+
 //     set name(newName){
 //         const newName1 = newName.split(' ');
 //         this.firstName=newName1[0];
@@ -249,8 +248,7 @@
 // console.log(user2);
 // console.log(user3);
 
-
-// dz22 
+// dz22
 
 // function Calc (){
 //     this.read = function() {
@@ -272,7 +270,6 @@
 
 // alert("summa : "+ calulator.sum())
 // alert('mul :'+ calulator.mul());
-
 
 // dz 23
 
@@ -301,16 +298,55 @@
 //         li.prepend(span);
 //         span.append(span.nextSibling); // поміщаємо текстовий вузол у span
 //       }
-  
+
 //       // ловимо кліки на всьому дереві
 //       tree.onclick = function(event) {
-  
+
 //         if (event.target.tagName != 'SPAN') {
 //           return;
 //         }
-  
+
 //         let childrenContainer = event.target.parentNode.querySelector('ul');
 //         if (!childrenContainer) return; // дітей немає
-  
+
 //         childrenContainer.hidden = !childrenContainer.hidden;
 //       }
+
+// dz 26
+// let clock;
+// let time = ()=> {
+//     clock = setInterval(()=>{
+//         console.log(i++)
+//     },1000)
+// }
+
+// function printNumber(from, to){
+//     let now = from;
+//     let time = setInterval(()=>{
+//         if(now==to){
+//             clearInterval(time);
+//         }
+//         console.log(now++);
+//     },1000)
+// }
+// printNumber(10,20);
+
+// function printNumbers(from, to) {
+//     let current = from;
+//     setTimeout(function time() {
+//       console.log(current);
+//       if (current < to) {
+//         setTimeout(time, 1000);
+//       }
+//       current++;
+//     }, 1000);
+//   }
+
+//   printNumbers(1,4);
+
+// dz 27 
+function delay(ms){
+    return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+delay(3000).then(()=> alert('виконалось через 3 сек '))
